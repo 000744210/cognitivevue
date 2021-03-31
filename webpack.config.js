@@ -12,6 +12,9 @@ module.exports = {
   performance: {
     hints: false
   },
+  externals: {
+    moment: 'moment'
+  },
   module: {
     rules: [
       {
@@ -37,16 +40,17 @@ module.exports = {
     ]
   },
   resolve: {
-    alias: {
+    /*alias: {
       'vue$': 'vue/dist/vue.esm-bundler.js'
-    }
+    }*/ // removes 100kb from the download. 476kb gzip vs 578kb gzip
   },
   devServer: {
     historyApiFallback: true,
     noInfo: true
   },
-  devtool: '#eval-source-map',
+  //devtool: '#eval-source-map', // TODO: GET RID OF THIS BLOATED SOURCE MAPPING
   plugins: [
     new VueLoaderPlugin(),
   ]
+  
 }
