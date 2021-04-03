@@ -429,3 +429,22 @@ padding:10px;
 .navbar-game-title{
   padding-top:3px;
 }
+
+.content-container{
+  padding: 10px;
+  padding-left:40px;
+  padding-right:40px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 13px;
+  border: 1px solid #c6c6c6;
+  margin-bottom:100px;
+}
+
+.content-container > h2{
+  text-align:center;
+}
+
+ul.content-list > dt{
+  margin-top:4px;
+}
